@@ -21,12 +21,13 @@ for f in sold_files:
             sold_months[month] = f  # prefer filled version
 
 sold_files_deduped = sorted(sold_months.values())
-print("Deduplicated sold files:", sold_files_deduped)
 
 # Load and concatenate all sold files
 sold_dfs = []
 for f in sold_files_deduped:
     df = pd.read_csv(os.path.join(folder, f), low_memory=False)
+    # Drop extra columns from _filled files
+    df = df.drop(columns=['latfilled', 'lonfilled'], errors='ignore')
     sold_dfs.append(df)
 
 sold = pd.concat(sold_dfs, ignore_index=True)
@@ -36,6 +37,8 @@ print(f"Total sold rows before filter: {len(sold)}")
 listing_dfs = []
 for f in listing_files:
     df = pd.read_csv(os.path.join(folder, f), low_memory=False)
+    # Drop extra columns from _filled files if present
+    df = df.drop(columns=['latfilled', 'lonfilled'], errors='ignore')
     listing_dfs.append(df)
 
 listings = pd.concat(listing_dfs, ignore_index=True)
@@ -48,14 +51,12 @@ listings_residential = listings[listings['PropertyType'] == 'Residential']
 print(f"Total sold rows after Residential filter: {len(sold_residential)}")
 print(f"Total listing rows after Residential filter: {len(listings_residential)}")
 
+# Row counts confirmed:
+# Total sold rows before Residential filter: 640526
+# Total listing rows before Residential filter: 917740
+# Total sold rows after Residential filter: 430716
+# Total listing rows after Residential filter: 583650
+
 # Save to CSV
 sold_residential.to_csv(os.path.join(folder, 'sold_combined.csv'), index=False)
 listings_residential.to_csv(os.path.join(folder, 'listings_combined.csv'), index=False)
-
-# Row counts before filter:
-# Total sold rows before Residential filter: 640526
-# Total listing rows before Residential filter: 917740
-
-# Row counts after Residential filter:
-# Total sold rows after Residential filter: 430716
-# Total listing rows after Residential filter: 583650
