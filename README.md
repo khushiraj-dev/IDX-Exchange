@@ -1,6 +1,7 @@
 IDX Exchange – Data Analyst Internship
 Intern: Khushi | Program: MLS Analytics & Tableau Dashboard (12-Week)
 Progress Tracker
+
 ✅ Week 0 – Orientation
 
 Downloaded all CRMLS CSV files from FTP server (CRMLSListing and CRMLSSold files)
