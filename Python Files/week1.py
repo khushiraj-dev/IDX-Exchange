@@ -52,10 +52,10 @@ print(f"Total sold rows after Residential filter: {len(sold_residential)}")
 print(f"Total listing rows after Residential filter: {len(listings_residential)}")
 
 # Row counts confirmed:
-# Total sold rows before Residential filter: 640526
-# Total listing rows before Residential filter: 917740
-# Total sold rows after Residential filter: 430716
-# Total listing rows after Residential filter: 583650
+# Total sold rows before Residential filter: 666037
+# Total listing rows before Residential filter: 955190
+# Total sold rows after Residential filter: 448253
+# Total listing rows after Residential filter: 607724
 
 # Saving to CSV
 sold_residential.to_csv(os.path.join(folder, 'sold_combined.csv'), index=False)
