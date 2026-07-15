@@ -121,11 +121,11 @@ equal = (sold['priceDiff'] == 0).sum()
 total = len(sold)
 
 print("Sold above:")
-print(above/total * 100)
+print(above/total * 100) #40.036
 print("sold below")
-print(below/total*100)
+print(below/total*100) #42.58
 print("sold at")
-print(equal/total*100) 
+print(equal/total*100) #17.38
 
 
 #Which counties have the highest median prices?
