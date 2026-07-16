@@ -31,7 +31,7 @@ print(missing_summary_sold)
 # flag columns with ?90% missing values - sold
 
 high_missing_sold = missing_summary_sold[missing_summary_sold['missing_pct'] > 90]
-print(high_missing_sold)
+print(high_missing_sold.head(20))
 
 # Missing value analysis - Listings
 missing_listings = listings.isnull().sum()
