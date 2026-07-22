@@ -1,0 +1,12 @@
+# Data files - too large for GitHub and confidential
+*.csv
+*.xlsx
+
+# Plot outputs
+*.png
+*.pdf
+
+# Python
+__pycache__/
+*.pyc
+.venv/
