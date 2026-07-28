@@ -138,6 +138,24 @@ print(f"Purchase after close: {sold['purchase_after_close_flag'].sum()}")
 print(f"Negative timeline: {sold['negative_timeline_flag'].sum()}")
 
 # -----------------------------
+# Resolve Date Consistency Flags
+# Set impossible dates to null rather than deleting rows
+# The sales are real — only the dates are corrupted
+# -----------------------------
+
+# listing_after_close: listing date is clearly wrong, clear it
+sold.loc[sold['listing_after_close_flag'], 'ListingContractDate'] = pd.NaT
+print(f"Cleared ListingContractDate for {sold['listing_after_close_flag'].sum()} rows")
+
+# purchase_after_close: purchase date is clearly wrong, clear it
+sold.loc[sold['purchase_after_close_flag'], 'PurchaseContractDate'] = pd.NaT
+print(f"Cleared PurchaseContractDate for {sold['purchase_after_close_flag'].sum()} rows")
+
+# negative_timeline: listing date after purchase date, clear listing date
+sold.loc[sold['negative_timeline_flag'], 'ListingContractDate'] = pd.NaT
+print(f"Cleared ListingContractDate for {sold['negative_timeline_flag'].sum()} rows")
+
+# -----------------------------
 # Step 6 – Geographic Data Quality Flags
 # California bounding box coordinates:
 # Latitude: 32.529508 to 42.009503
