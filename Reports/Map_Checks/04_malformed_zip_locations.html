@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d485782b30ef3d440068a3deae399298 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d485782b30ef3d440068a3deae399298" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d485782b30ef3d440068a3deae399298 = L.map(
+                "map_d485782b30ef3d440068a3deae399298",
+                {
+                    center: [36.5, -119.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ddfae826ed3944dc9916a0debbbef027 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ddfae826ed3944dc9916a0debbbef027.addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+            var circle_marker_d81d9ff044c0d95cf660e82f2d896259 = L.circleMarker(
+                [37.9164608, -121.7205759],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_f513a544e6bdf092c5f18ad5d99777f5 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_5ba8f6979e7cc12a308db71d5d3f0430 = $(`<div id="html_5ba8f6979e7cc12a308db71d5d3f0430" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1048425837<br>     <b>City:</b> Brentwood<br>     <b>County:</b> Contra Costa<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 94513-999<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 37.9164608<br>     <b>Longitude:</b> -121.7205759     </div>`)[0];
+                popup_f513a544e6bdf092c5f18ad5d99777f5.setContent(html_5ba8f6979e7cc12a308db71d5d3f0430);
+            
+        
+
+        circle_marker_d81d9ff044c0d95cf660e82f2d896259.bindPopup(popup_f513a544e6bdf092c5f18ad5d99777f5)
+        ;
+
+        
+    
+    
+            var circle_marker_38949e88efcc05ca565f9e595a824f1b = L.circleMarker(
+                [37.803977, -121.8961066],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_b8d5fdf8b67f3a3be595dfdfe02e31b2 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_81d557f3654a949e684df28369f900bf = $(`<div id="html_81d557f3654a949e684df28369f900bf" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1065210306<br>     <b>City:</b> Danville<br>     <b>County:</b> Contra Costa<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 94506-123<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 37.803977<br>     <b>Longitude:</b> -121.8961066     </div>`)[0];
+                popup_b8d5fdf8b67f3a3be595dfdfe02e31b2.setContent(html_81d557f3654a949e684df28369f900bf);
+            
+        
+
+        circle_marker_38949e88efcc05ca565f9e595a824f1b.bindPopup(popup_b8d5fdf8b67f3a3be595dfdfe02e31b2)
+        ;
+
+        
+    
+    
+            var circle_marker_65f24979a8d75b75f68ccf932564ed78 = L.circleMarker(
+                [37.8019813, -121.8893099],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_5fe2f7eabb5d1ba659a0263b8e91f173 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_bd820b00d8fd10d3473e394bdf321759 = $(`<div id="html_bd820b00d8fd10d3473e394bdf321759" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1068134987<br>     <b>City:</b> Danville<br>     <b>County:</b> Contra Costa<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 94506-1<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 37.8019813<br>     <b>Longitude:</b> -121.8893099     </div>`)[0];
+                popup_5fe2f7eabb5d1ba659a0263b8e91f173.setContent(html_bd820b00d8fd10d3473e394bdf321759);
+            
+        
+
+        circle_marker_65f24979a8d75b75f68ccf932564ed78.bindPopup(popup_5fe2f7eabb5d1ba659a0263b8e91f173)
+        ;
+
+        
+    
+    
+            var circle_marker_59eac05d23a508471a0432a7d0d96da0 = L.circleMarker(
+                [37.92530240000001, -122.0912708],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_a4046678b7044aadaa83fe1f9e33f3a2 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_60b663a32b9fc501e26551dc150a707f = $(`<div id="html_60b663a32b9fc501e26551dc150a707f" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1067822478<br>     <b>City:</b> Lafayette<br>     <b>County:</b> Contra Costa<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 94549-999<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 37.92530240000001<br>     <b>Longitude:</b> -122.0912708     </div>`)[0];
+                popup_a4046678b7044aadaa83fe1f9e33f3a2.setContent(html_60b663a32b9fc501e26551dc150a707f);
+            
+        
+
+        circle_marker_59eac05d23a508471a0432a7d0d96da0.bindPopup(popup_a4046678b7044aadaa83fe1f9e33f3a2)
+        ;
+
+        
+    
+    
+            var circle_marker_b80933f705a9991d1df4c9cb27ae0af7 = L.circleMarker(
+                [36.778261, -119.4179324],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_78407c24f0dee7645d02cd34efa137bf = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_6acc24a07f8480d5b82c6ba1f3cd0c81 = $(`<div id="html_6acc24a07f8480d5b82c6ba1f3cd0c81" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1061275628<br>     <b>City:</b> Lathrop<br>     <b>County:</b> San Joaquin<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 93309-762<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 36.778261<br>     <b>Longitude:</b> -119.4179324     </div>`)[0];
+                popup_78407c24f0dee7645d02cd34efa137bf.setContent(html_6acc24a07f8480d5b82c6ba1f3cd0c81);
+            
+        
+
+        circle_marker_b80933f705a9991d1df4c9cb27ae0af7.bindPopup(popup_78407c24f0dee7645d02cd34efa137bf)
+        ;
+
+        
+    
+    
+            var circle_marker_a07d3a22898802745e6a6b94a5aac60c = L.circleMarker(
+                [37.9088408, -122.1574917],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_9cda26a3c0e2df695511a366c84adc7c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_647637add16a4b30ff7628550ca106ce = $(`<div id="html_647637add16a4b30ff7628550ca106ce" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1076052452<br>     <b>City:</b> Lafayette<br>     <b>County:</b> Contra Costa<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 94549-242<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 37.9088408<br>     <b>Longitude:</b> -122.1574917     </div>`)[0];
+                popup_9cda26a3c0e2df695511a366c84adc7c.setContent(html_647637add16a4b30ff7628550ca106ce);
+            
+        
+
+        circle_marker_a07d3a22898802745e6a6b94a5aac60c.bindPopup(popup_9cda26a3c0e2df695511a366c84adc7c)
+        ;
+
+        
+    
+    
+            var circle_marker_9806ce37e08839e5f6b50987a0430db7 = L.circleMarker(
+                [37.9637129, -122.1036429],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_0f0426f0d3be23d87c71ea63102be82d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_ec532ae4ac19d674d5a0b9b9792c29ef = $(`<div id="html_ec532ae4ac19d674d5a0b9b9792c29ef" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1075043580<br>     <b>City:</b> Martinez<br>     <b>County:</b> Contra Costa<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 94553-601<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 37.9637129<br>     <b>Longitude:</b> -122.1036429     </div>`)[0];
+                popup_0f0426f0d3be23d87c71ea63102be82d.setContent(html_ec532ae4ac19d674d5a0b9b9792c29ef);
+            
+        
+
+        circle_marker_9806ce37e08839e5f6b50987a0430db7.bindPopup(popup_0f0426f0d3be23d87c71ea63102be82d)
+        ;
+
+        
+    
+    
+            var circle_marker_c8534c1681a9055033797aba5ce517ee = L.circleMarker(
+                [37.6896443, -121.9205253],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_bf7b030fb4d23454ef143413716e03b0 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a23b8c94bace96dd7eacd48e7766d772 = $(`<div id="html_a23b8c94bace96dd7eacd48e7766d772" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1073162885<br>     <b>City:</b> Pleasanton<br>     <b>County:</b> Alameda<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 94588-0<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 37.6896443<br>     <b>Longitude:</b> -121.9205253     </div>`)[0];
+                popup_bf7b030fb4d23454ef143413716e03b0.setContent(html_a23b8c94bace96dd7eacd48e7766d772);
+            
+        
+
+        circle_marker_c8534c1681a9055033797aba5ce517ee.bindPopup(popup_bf7b030fb4d23454ef143413716e03b0)
+        ;
+
+        
+    
+    
+            var circle_marker_e8fa42962f007df5a02f39f772069dbe = L.circleMarker(
+                [37.5270635, -121.9921219],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_aff1f95229d48d2c202e2c74b144d24f = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3fabca7497712cbe438989dc1b0e763e = $(`<div id="html_3fabca7497712cbe438989dc1b0e763e" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1069609062<br>     <b>City:</b> Fremont<br>     <b>County:</b> Alameda<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 94538-10<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 37.5270635<br>     <b>Longitude:</b> -121.9921219     </div>`)[0];
+                popup_aff1f95229d48d2c202e2c74b144d24f.setContent(html_3fabca7497712cbe438989dc1b0e763e);
+            
+        
+
+        circle_marker_e8fa42962f007df5a02f39f772069dbe.bindPopup(popup_aff1f95229d48d2c202e2c74b144d24f)
+        ;
+
+        
+    
+    
+            var circle_marker_d2b0ba018cd2df76d309dd6ff1c5d86d = L.circleMarker(
+                [33.8405246, -118.1036529],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_863089dd2d12739e2e03e088ebf501cf = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d69dbf900edf78880b70767569dab5dd = $(`<div id="html_d69dbf900edf78880b70767569dab5dd" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1075601475<br>     <b>City:</b> Lakewood<br>     <b>County:</b> Los Angeles<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 907013<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 33.8405246<br>     <b>Longitude:</b> -118.1036529     </div>`)[0];
+                popup_863089dd2d12739e2e03e088ebf501cf.setContent(html_d69dbf900edf78880b70767569dab5dd);
+            
+        
+
+        circle_marker_d2b0ba018cd2df76d309dd6ff1c5d86d.bindPopup(popup_863089dd2d12739e2e03e088ebf501cf)
+        ;
+
+        
+    
+    
+            var circle_marker_30224ec0a4de42e51a1620ad1166e003 = L.circleMarker(
+                [37.5525946, -122.0320688],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_8a5fa7fb14e59e1d025c6aaf39d6f063 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_6b729ea30d7cd0c5603a8d0f7e62e648 = $(`<div id="html_6b729ea30d7cd0c5603a8d0f7e62e648" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1079059160<br>     <b>City:</b> Newark<br>     <b>County:</b> Alameda<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 94560-200<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 37.5525946<br>     <b>Longitude:</b> -122.0320688     </div>`)[0];
+                popup_8a5fa7fb14e59e1d025c6aaf39d6f063.setContent(html_6b729ea30d7cd0c5603a8d0f7e62e648);
+            
+        
+
+        circle_marker_30224ec0a4de42e51a1620ad1166e003.bindPopup(popup_8a5fa7fb14e59e1d025c6aaf39d6f063)
+        ;
+
+        
+    
+    
+            var circle_marker_268cb4049273969cfc8fcdcfa3b3aab0 = L.circleMarker(
+                [37.330645200000006, -121.8696847],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_598dc794f073575050e3b340819446d6 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_4b00ec2a32a58f7473dc6c9684cb4900 = $(`<div id="html_4b00ec2a32a58f7473dc6c9684cb4900" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1079016249<br>     <b>City:</b> San Jose<br>     <b>County:</b> Santa Clara<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 95112-232<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 37.330645200000006<br>     <b>Longitude:</b> -121.8696847     </div>`)[0];
+                popup_598dc794f073575050e3b340819446d6.setContent(html_4b00ec2a32a58f7473dc6c9684cb4900);
+            
+        
+
+        circle_marker_268cb4049273969cfc8fcdcfa3b3aab0.bindPopup(popup_598dc794f073575050e3b340819446d6)
+        ;
+
+        
+    
+    
+            var circle_marker_2d930fef06e934db35e4a0f733f076f9 = L.circleMarker(
+                [37.95363589999999, -121.9597898],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_95924407b5e2d91b82857de7803e8c87 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e496939ddaecefa92ca58af02adb4997 = $(`<div id="html_e496939ddaecefa92ca58af02adb4997" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1075783991<br>     <b>City:</b> Concord<br>     <b>County:</b> Contra Costa<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 94521-522<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 37.95363589999999<br>     <b>Longitude:</b> -121.9597898     </div>`)[0];
+                popup_95924407b5e2d91b82857de7803e8c87.setContent(html_e496939ddaecefa92ca58af02adb4997);
+            
+        
+
+        circle_marker_2d930fef06e934db35e4a0f733f076f9.bindPopup(popup_95924407b5e2d91b82857de7803e8c87)
+        ;
+
+        
+    
+    
+            var circle_marker_6f2fde1d3d56de31a4e418f4f9302806 = L.circleMarker(
+                [37.53282943, -121.99521922],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_260f451b0233bc1d3f87cc4d58a7668c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_2bf911f848c6af6b976f45d380fc008c = $(`<div id="html_2bf911f848c6af6b976f45d380fc008c" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1079675705<br>     <b>City:</b> Fremont<br>     <b>County:</b> Alameda<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 94538-100<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 37.53282943<br>     <b>Longitude:</b> -121.99521922     </div>`)[0];
+                popup_260f451b0233bc1d3f87cc4d58a7668c.setContent(html_2bf911f848c6af6b976f45d380fc008c);
+            
+        
+
+        circle_marker_6f2fde1d3d56de31a4e418f4f9302806.bindPopup(popup_260f451b0233bc1d3f87cc4d58a7668c)
+        ;
+
+        
+    
+    
+            var circle_marker_e9da9d02a53a1f2904dd8b51217122b1 = L.circleMarker(
+                [37.89831941, -121.5903611],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_a310d6a806720e45f6f7a44251a647be = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3e00b7c2d702bb55e38d8180169e7863 = $(`<div id="html_3e00b7c2d702bb55e38d8180169e7863" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1067810694<br>     <b>City:</b> Discovery Bay<br>     <b>County:</b> Contra Costa<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 94505-513<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 37.89831941<br>     <b>Longitude:</b> -121.5903611     </div>`)[0];
+                popup_a310d6a806720e45f6f7a44251a647be.setContent(html_3e00b7c2d702bb55e38d8180169e7863);
+            
+        
+
+        circle_marker_e9da9d02a53a1f2904dd8b51217122b1.bindPopup(popup_a310d6a806720e45f6f7a44251a647be)
+        ;
+
+        
+    
+    
+            var circle_marker_b0b47ccd322046a12260f52827f6c8a3 = L.circleMarker(
+                [37.95248417, -121.72769493],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_59b9eaedd72c6c641389d08440f62fc1 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_68fadabf5463a15264a3c093c6052c11 = $(`<div id="html_68fadabf5463a15264a3c093c6052c11" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1076882321<br>     <b>City:</b> Brentwood<br>     <b>County:</b> Contra Costa<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 94513-000<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 37.95248417<br>     <b>Longitude:</b> -121.72769493     </div>`)[0];
+                popup_59b9eaedd72c6c641389d08440f62fc1.setContent(html_68fadabf5463a15264a3c093c6052c11);
+            
+        
+
+        circle_marker_b0b47ccd322046a12260f52827f6c8a3.bindPopup(popup_59b9eaedd72c6c641389d08440f62fc1)
+        ;
+
+        
+    
+    
+            var circle_marker_187831d9462893e6921832f6bec17720 = L.circleMarker(
+                [37.76676472, -121.98504113],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_6c79bf87539e6696d73824c87030443b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_366cc07a11700d7294082e2d16ed5ddd = $(`<div id="html_366cc07a11700d7294082e2d16ed5ddd" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1088833170<br>     <b>City:</b> San Ramon<br>     <b>County:</b> Contra Costa<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 94583-200<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 37.76676472<br>     <b>Longitude:</b> -121.98504113     </div>`)[0];
+                popup_6c79bf87539e6696d73824c87030443b.setContent(html_366cc07a11700d7294082e2d16ed5ddd);
+            
+        
+
+        circle_marker_187831d9462893e6921832f6bec17720.bindPopup(popup_6c79bf87539e6696d73824c87030443b)
+        ;
+
+        
+    
+    
+            var circle_marker_57d92128dc3fc007e8aee6a1b9605a22 = L.circleMarker(
+                [37.82994982, -122.00665231],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_ddd8277e6eb5192c6ef3c00fcb29bd81 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_2a143d7f59508358c382309cdf17a7ad = $(`<div id="html_2a143d7f59508358c382309cdf17a7ad" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1093497543<br>     <b>City:</b> Danville<br>     <b>County:</b> Contra Costa<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 94526-17<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 37.82994982<br>     <b>Longitude:</b> -122.00665231     </div>`)[0];
+                popup_ddd8277e6eb5192c6ef3c00fcb29bd81.setContent(html_2a143d7f59508358c382309cdf17a7ad);
+            
+        
+
+        circle_marker_57d92128dc3fc007e8aee6a1b9605a22.bindPopup(popup_ddd8277e6eb5192c6ef3c00fcb29bd81)
+        ;
+
+        
+    
+    
+            var circle_marker_d35edbb8f01b8fecff094938c3a7d436 = L.circleMarker(
+                [37.98270953, -121.68697379],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_b3a7d6cfaa34efc040f71c2179450490 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_5fe6ec9adfb5569a85f019f31afd7fe7 = $(`<div id="html_5fe6ec9adfb5569a85f019f31afd7fe7" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1097262915<br>     <b>City:</b> Oakley<br>     <b>County:</b> Contra Costa<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 94561-00<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 37.98270953<br>     <b>Longitude:</b> -121.68697379     </div>`)[0];
+                popup_b3a7d6cfaa34efc040f71c2179450490.setContent(html_5fe6ec9adfb5569a85f019f31afd7fe7);
+            
+        
+
+        circle_marker_d35edbb8f01b8fecff094938c3a7d436.bindPopup(popup_b3a7d6cfaa34efc040f71c2179450490)
+        ;
+
+        
+    
+    
+            var circle_marker_095967feb3f5c07bde5ae7ef9382c894 = L.circleMarker(
+                [33.766919, -118.172263],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_1b614dbe705626e0187d573b053aea73 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_ed0b24031f8cfdd9d42d224a4df17c31 = $(`<div id="html_ed0b24031f8cfdd9d42d224a4df17c31" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1103138741<br>     <b>City:</b> Long Beach<br>     <b>County:</b> Los Angeles<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 980803<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 33.766919<br>     <b>Longitude:</b> -118.172263     </div>`)[0];
+                popup_1b614dbe705626e0187d573b053aea73.setContent(html_ed0b24031f8cfdd9d42d224a4df17c31);
+            
+        
+
+        circle_marker_095967feb3f5c07bde5ae7ef9382c894.bindPopup(popup_1b614dbe705626e0187d573b053aea73)
+        ;
+
+        
+    
+    
+            var circle_marker_67f23b9f8caa0033f0c7d39811b4c95c = L.circleMarker(
+                [37.937311, -122.05107617],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_8849c4262a5b13596f4416bc508eb581 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_86cd161f5bc49f204da83d3c3dd9a448 = $(`<div id="html_86cd161f5bc49f204da83d3c3dd9a448" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1097826003<br>     <b>City:</b> Concord<br>     <b>County:</b> Contra Costa<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 94518-0<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 37.937311<br>     <b>Longitude:</b> -122.05107617     </div>`)[0];
+                popup_8849c4262a5b13596f4416bc508eb581.setContent(html_86cd161f5bc49f204da83d3c3dd9a448);
+            
+        
+
+        circle_marker_67f23b9f8caa0033f0c7d39811b4c95c.bindPopup(popup_8849c4262a5b13596f4416bc508eb581)
+        ;
+
+        
+    
+    
+            var circle_marker_9af68fc5bda8569f8fe3835cca1d9e68 = L.circleMarker(
+                [37.92713272, -121.938194],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_62ef4fbff720957c70bc03adedf0ed82 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_1a01fa1c6cec80d9d22a1816c10101f9 = $(`<div id="html_1a01fa1c6cec80d9d22a1816c10101f9" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1108386989<br>     <b>City:</b> Clayton<br>     <b>County:</b> Contra Costa<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 94517-15<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 37.92713272<br>     <b>Longitude:</b> -121.938194     </div>`)[0];
+                popup_62ef4fbff720957c70bc03adedf0ed82.setContent(html_1a01fa1c6cec80d9d22a1816c10101f9);
+            
+        
+
+        circle_marker_9af68fc5bda8569f8fe3835cca1d9e68.bindPopup(popup_62ef4fbff720957c70bc03adedf0ed82)
+        ;
+
+        
+    
+    
+            var circle_marker_f5ceb49f5d91a28f49aac97d945f7056 = L.circleMarker(
+                [37.81243205, -122.27898214],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_2345d2e7603ec9995306ea92baeccc70 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f28e23de0f6c2458ea1b6f05336671d9 = $(`<div id="html_f28e23de0f6c2458ea1b6f05336671d9" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1108107455<br>     <b>City:</b> Oakland<br>     <b>County:</b> Alameda<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 94607-7<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 37.81243205<br>     <b>Longitude:</b> -122.27898214     </div>`)[0];
+                popup_2345d2e7603ec9995306ea92baeccc70.setContent(html_f28e23de0f6c2458ea1b6f05336671d9);
+            
+        
+
+        circle_marker_f5ceb49f5d91a28f49aac97d945f7056.bindPopup(popup_2345d2e7603ec9995306ea92baeccc70)
+        ;
+
+        
+    
+    
+            var circle_marker_57cfb912900d0b86dbec2f1d33c39889 = L.circleMarker(
+                [37.70511954, -121.86376025],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_ac92ccb99712adf9356fd03ee1483620 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_120ebd9df1589e59320fbfa9a131963f = $(`<div id="html_120ebd9df1589e59320fbfa9a131963f" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1106985593<br>     <b>City:</b> Dublin<br>     <b>County:</b> Alameda<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 94568-463<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 37.70511954<br>     <b>Longitude:</b> -121.86376025     </div>`)[0];
+                popup_ac92ccb99712adf9356fd03ee1483620.setContent(html_120ebd9df1589e59320fbfa9a131963f);
+            
+        
+
+        circle_marker_57cfb912900d0b86dbec2f1d33c39889.bindPopup(popup_ac92ccb99712adf9356fd03ee1483620)
+        ;
+
+        
+    
+    
+            var circle_marker_13138063eacd3e903441fc92441a76fd = L.circleMarker(
+                [37.8308216, -122.1233529],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_9e6cad424064bd2417286531733ebcc8 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_4c14fb85d4ff9f3e134125eda3fa90df = $(`<div id="html_4c14fb85d4ff9f3e134125eda3fa90df" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1111611983<br>     <b>City:</b> Vallejo<br>     <b>County:</b> Solano<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 94549-0<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 37.8308216<br>     <b>Longitude:</b> -122.1233529     </div>`)[0];
+                popup_9e6cad424064bd2417286531733ebcc8.setContent(html_4c14fb85d4ff9f3e134125eda3fa90df);
+            
+        
+
+        circle_marker_13138063eacd3e903441fc92441a76fd.bindPopup(popup_9e6cad424064bd2417286531733ebcc8)
+        ;
+
+        
+    
+    
+            var circle_marker_36e72330b032763e5ae66d016cc46500 = L.circleMarker(
+                [37.73128374, -122.24335382],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_f3be0b80dd1de8207e041fd560887450 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_c280ddeead428e528ef4ea54e57ce7d9 = $(`<div id="html_c280ddeead428e528ef4ea54e57ce7d9" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1108575154<br>     <b>City:</b> Alameda<br>     <b>County:</b> Alameda<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 94502-696<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 37.73128374<br>     <b>Longitude:</b> -122.24335382     </div>`)[0];
+                popup_f3be0b80dd1de8207e041fd560887450.setContent(html_c280ddeead428e528ef4ea54e57ce7d9);
+            
+        
+
+        circle_marker_36e72330b032763e5ae66d016cc46500.bindPopup(popup_f3be0b80dd1de8207e041fd560887450)
+        ;
+
+        
+    
+    
+            var circle_marker_1087fc6059e2ae81e4eee7d6b4e3c1e1 = L.circleMarker(
+                [37.7223322, -121.84805187],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_3b4f41bba1865814bc2ba117c344bf8f = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3c4b7779ecf2c940f2e296f97b81a0fe = $(`<div id="html_3c4b7779ecf2c940f2e296f97b81a0fe" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1112260921<br>     <b>City:</b> Dublin<br>     <b>County:</b> Alameda<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 94568-732<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 37.7223322<br>     <b>Longitude:</b> -121.84805187     </div>`)[0];
+                popup_3b4f41bba1865814bc2ba117c344bf8f.setContent(html_3c4b7779ecf2c940f2e296f97b81a0fe);
+            
+        
+
+        circle_marker_1087fc6059e2ae81e4eee7d6b4e3c1e1.bindPopup(popup_3b4f41bba1865814bc2ba117c344bf8f)
+        ;
+
+        
+    
+    
+            var circle_marker_f4627fe4b8075987edfeee07529d7222 = L.circleMarker(
+                [38.1750049, -121.69578045],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_3bfc807fc1f5e6c2d1c1c70a19d58685 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_be9c5d7f1bdfba29c200fd5373e02298 = $(`<div id="html_be9c5d7f1bdfba29c200fd5373e02298" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1112047865<br>     <b>City:</b> Rio Vista<br>     <b>County:</b> Solano<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 94571-123<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 38.1750049<br>     <b>Longitude:</b> -121.69578045     </div>`)[0];
+                popup_3bfc807fc1f5e6c2d1c1c70a19d58685.setContent(html_be9c5d7f1bdfba29c200fd5373e02298);
+            
+        
+
+        circle_marker_f4627fe4b8075987edfeee07529d7222.bindPopup(popup_3bfc807fc1f5e6c2d1c1c70a19d58685)
+        ;
+
+        
+    
+    
+            var circle_marker_cb8616887b1d8164805d484f362d01c6 = L.circleMarker(
+                [37.64899804, -121.87644108],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_74277b8609b0d452d59801053172741d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e71cf82437b2545a2774f87ae1b67226 = $(`<div id="html_e71cf82437b2545a2774f87ae1b67226" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1144681440<br>     <b>City:</b> Pleasanton<br>     <b>County:</b> Alameda<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 94566-2<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 37.64899804<br>     <b>Longitude:</b> -121.87644108     </div>`)[0];
+                popup_74277b8609b0d452d59801053172741d.setContent(html_e71cf82437b2545a2774f87ae1b67226);
+            
+        
+
+        circle_marker_cb8616887b1d8164805d484f362d01c6.bindPopup(popup_74277b8609b0d452d59801053172741d)
+        ;
+
+        
+    
+    
+            var circle_marker_d4af6d6c8ea7398d99ab09f3593bdb71 = L.circleMarker(
+                [37.63359214, -122.05183524],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_1e6742a0e33ccff63df3e1df002b2c4d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_ec71f789ee0a664acddde5fe90afb1cd = $(`<div id="html_ec71f789ee0a664acddde5fe90afb1cd" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1147410046<br>     <b>City:</b> Hayward<br>     <b>County:</b> Alameda<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 94544-56<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 37.63359214<br>     <b>Longitude:</b> -122.05183524     </div>`)[0];
+                popup_1e6742a0e33ccff63df3e1df002b2c4d.setContent(html_ec71f789ee0a664acddde5fe90afb1cd);
+            
+        
+
+        circle_marker_d4af6d6c8ea7398d99ab09f3593bdb71.bindPopup(popup_1e6742a0e33ccff63df3e1df002b2c4d)
+        ;
+
+        
+    
+    
+            var circle_marker_aba2c8d10ab558ce6196b86196ac3af6 = L.circleMarker(
+                [37.71736998, -121.4286311],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_b03960e24d12073828ff8c1d831826c6 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_099ff171bdc3d66bb10f7c45f27cb426 = $(`<div id="html_099ff171bdc3d66bb10f7c45f27cb426" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1153341314<br>     <b>City:</b> Tracy<br>     <b>County:</b> San Joaquin<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 95376-918<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 37.71736998<br>     <b>Longitude:</b> -121.4286311     </div>`)[0];
+                popup_b03960e24d12073828ff8c1d831826c6.setContent(html_099ff171bdc3d66bb10f7c45f27cb426);
+            
+        
+
+        circle_marker_aba2c8d10ab558ce6196b86196ac3af6.bindPopup(popup_b03960e24d12073828ff8c1d831826c6)
+        ;
+
+        
+    
+    
+            var circle_marker_6d34540276acbfd5ac93832ed5e20927 = L.circleMarker(
+                [37.6350415, -122.08459893],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d485782b30ef3d440068a3deae399298);
+        
+    
+        var popup_10c028a54a530c95a1cf97c3b2763621 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_aef1622f8e0847e6dc8728842c5f5dd2 = $(`<div id="html_aef1622f8e0847e6dc8728842c5f5dd2" style="width: 100.0%; height: 100.0%;">     <b>ListingKey:</b> 1169957076<br>     <b>City:</b> Hayward<br>     <b>County:</b> Alameda<br>     <b>State:</b> CA<br>     <b>Original ZIP:</b> 94544-43<br>     <b>Clean ZIP:</b> nan<br>     <b>Latitude:</b> 37.6350415<br>     <b>Longitude:</b> -122.08459893     </div>`)[0];
+                popup_10c028a54a530c95a1cf97c3b2763621.setContent(html_aef1622f8e0847e6dc8728842c5f5dd2);
+            
+        
+
+        circle_marker_6d34540276acbfd5ac93832ed5e20927.bindPopup(popup_10c028a54a530c95a1cf97c3b2763621)
+        ;
+
+        
+    
+</script>
+</html>
